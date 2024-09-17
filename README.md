@@ -23,4 +23,53 @@ To run the Streamlit app locally, you need to have Python installed along with t
 ### Installing Dependencies
 
 Create a `requirements.txt` file with the following content to specify the dependencies:
+streamlit tensorflow pillow numpy
 
+csharp
+Copy code
+
+Install the dependencies locally with:
+
+```bash
+pip install -r requirements.txt
+```
+Running the Streamlit App Locally
+Save the Model and App Code:
+
+Make sure you have both crack_detection_model.h5 and app.py in the same directory.
+
+Run the App:
+
+In your terminal or command prompt, navigate to the directory containing app.py and run:
+
+bash
+Copy code
+streamlit run app.py
+This will start the Streamlit server and open the app in your default web browser.
+
+Deploying the Streamlit App
+The Streamlit app is deployed and accessible online. You can use the link below to access it.
+
+Click here to use the Crack Detection Web Application
+
+How to Use the Web Application
+Upload an Image:
+
+Click on the "Choose an image..." button and upload an image of a surface.
+Classify the Image:
+
+After uploading, the app will automatically classify the image and display whether it has a crack or not.
+Model Details
+Architecture: Convolutional Neural Network (CNN)
+Input Size: 150x150 pixels
+Output Classes: Crack (1) or No Crack (0)
+Contributing
+Feel free to fork the repository and submit pull requests with improvements or fixes. For any issues or feature requests, please open an issue in this repository.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+TensorFlow: For providing the powerful tools to build and train deep learning models.
+Streamlit: For enabling easy deployment of interactive machine learning applications.
+Google Colab: For providing a free and accessible platform for model training.
