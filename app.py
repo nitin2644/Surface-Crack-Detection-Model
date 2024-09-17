@@ -2,10 +2,20 @@ import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 import numpy as np
-import io
+import requests
+from io import BytesIO
+
+# Define the URL of the model file
+model_url = 'https://github.com/nitin2644/Surface-Crack-Detection-Model/releases/tag/v1.0'
+
+# Function to load model from URL
+def load_model_from_url(url):
+    response = requests.get(url)
+    model_file = BytesIO(response.content)
+    return tf.keras.models.load_model(model_file)
 
 # Load the trained model
-model = tf.keras.models.load_model('crack_detection_model.h5')
+model = load_model_from_url(model_url)
 
 # Define a function to preprocess the image
 def preprocess_image(img):
