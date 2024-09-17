@@ -63,6 +63,12 @@ Model Details
 Architecture: Convolutional Neural Network (CNN)
 Input Size: 150x150 pixels
 Output Classes: Crack (1) or No Crack (0)
+
+## Download the Model
+
+You can download the trained model from [this release](https://github.com/nitin2644/Surface-Crack-Detection-Model/releases/tag/v1.0).
+
+
 Contributing
 Feel free to fork the repository and submit pull requests with improvements or fixes. For any issues or feature requests, please open an issue in this repository.
 
